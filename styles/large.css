@@ -1,0 +1,269 @@
+/* MEDIA QUERY */
+
+@media only screen and (min-width: 1140px) {
+    .lg{width: 25%;}
+    .lg-8{width: 90%;}
+    .lg-6{width: 49.095%;}
+    .lg-5{width: 45%;}
+    .lg-2{width: 20%;}
+    .lg-1{width: 10%;}
+
+   
+   
+    nav ul{display: block; }
+    nav .ham{display: none;}
+    nav li {float: left;}
+   
+
+    nav .hamburgerBtn{
+        display: none;
+    }
+
+   
+
+    .yellow-banner{
+        background-color: #fada22e5;
+        padding: .8rem 0 1rem 2rem;
+        color: #000;
+        display: block;
+   
+    }
+    .exhibition{
+        flex-direction: row;
+        justify-content: space-between;
+        padding-top: 5rem;
+        margin: 0 3.5rem
+    }
+
+    .exhibition p{
+        font-size: 2em;
+        margin: 10px;
+        color: #4d4d4d;
+    }
+
+    .card-row{
+        display: none;
+       
+    }
+
+    .cards{
+        margin: 5rem 0;
+    }
+    .card-row-md{
+        display: none;
+    }
+   
+    .card-row-lg{
+        padding: 0 0.75rem;
+        display: grid;
+        grid-template-columns: repeat(2, [first-col last-col] 1fr);
+        grid-template-rows: [first-row last-row] 300px 200px;
+        gap: 7px;
+    }
+
+    .grid-1-container{
+        grid-column: first-col / span 3.5;
+        grid-row: first-row;
+    }
+
+    .grid-1-container{
+        display: grid;
+        grid-template-columns: [first-col] 1fr;
+        grid-template-rows: [first-row last-row] 300px 200px;
+        gap: 7px;
+    }
+
+    .dv-1-lg{
+        grid-column: first-col / span auto;
+    }
+
+    .grid-2-container{
+        grid-column: last-col / span 3.5;
+        /*grid-row: first-row;*/
+    }
+
+    .grid-2-container{
+        display: grid;
+        grid-template-columns: [first-col] 1fr;
+        grid-template-rows: [first-row last-row] 200px 300px;
+        gap: 7px;
+
+    }
+
+    .sub-grid-2{
+        grid-column: first-col / span 3.5;
+        display: grid;
+    }
+
+     .sub-grid-2{
+        display: grid;
+        grid-template-columns: repeat(2, [first-col] 1fr);
+        grid-template-rows: [first-row] 200px;
+        gap: 7px;
+    }
+
+    .dv-3-lg,
+    .dv-4-lg{
+        grid-column: first-col / span 1.5;
+        grid-row: first-row 200px;
+    }
+
+    .dv-2-lg{
+        background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.8)), url(https://img-cdn.tnwcdn.com/image?fit=285%2C150&url=https%3A%2F%2Fs3.amazonaws.com%2Fevents.tnw%2Fhardfork-2018%2Fuploads%2Fcompanies%2Fhome-header_advert-tnw2021-03.jpg&signature=5666d931fff7b6ec7496f08886c9fde0);
+        padding: 3rem 2rem;
+        text-align: center;
+    }
+    .dv-5-lg{
+        background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.8)), url(https://img-cdn.tnwcdn.com/image?fit=600%2C300&url=https%3A%2F%2Fs3.amazonaws.com%2Fevents.tnw%2Fhardfork-2018%2Fuploads%2Fvisuals%2Fgifts.jpeg&signature=53019132c629a44baae62f6d4c154f7c);
+        grid-column: first-col / span ;
+    }
+
+    .popular-post-row{
+        display: flex;
+        flex-direction: row;
+        padding: 3rem;
+       
+    }
+
+
+    .sm-grid-2{
+        flex: 12;
+        padding-left: 2rem;
+    }
+
+    .latest-stories{
+        height: 580px;
+    }
+
+
+    .latest-stories-row{
+        padding: 0;
+        grid-template-columns: repeat(4, [four-cols] 1fr);
+        grid-row-gap: 80px;
+        grid-template-rows: repeat(2, [two-rows] 200px);
+          
+    }
+
+    .grid-col-1{
+      background-color: red;
+      grid-column: four-cols;
+      grid-row: two-rows 1;
+  }
+
+ 
+
+
+  .latest-stories figure{
+        /*width: 15rem;*/
+        height: 150px;
+        border-radius: 0;
+        padding-top: 0;
+        margin-right: 0;
+        
+    }
+
+    .video-thumbnail{
+        padding: 0 3rem;
+        display: grid;
+        grid-template-columns: 60rem 18rem;
+        grid-template-rows: [one-row] 600px;
+        gap: 10px;
+    }
+
+
+    .latest-stories figcaption{
+        color: #000;
+        line-height: 1.5;
+    }
+
+   
+    .lg-grid-2{
+        line-height: 15px;
+    }
+
+    .partners-wrapper{
+        margin: 10rem 0;
+        padding: 0 8rem;
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+        grid-template-rows:  [first-row] 80px;
+      
+    }
+
+     .google{
+        grid-column: 1 ;
+        grid-row: 1;
+    }
+    .etoro{
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    .ibm{
+       grid-column: 3;
+       grid-row: 1;
+    }
+
+    .microsoft{
+        grid-column: 4;
+        grid-row: 1;
+    }
+
+    .paypal{
+        grid-column: 5;
+        grid-row: 1;
+    }
+    .vodafone{
+        grid-column: 6;
+        grid-row: 1;
+    }
+
+    .accenture{
+        grid-column: 7;
+        grid-row: 1;
+    }
+
+    .mckinsey{
+        grid-column: 8;
+        grid-row: 1;
+       
+    }
+
+    .partners-wrapper img{
+        width: 100%;
+    }
+
+    footer{
+        height: 500px;
+        padding: 4rem;
+    }
+
+    .footer-grid{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1 20px;
+    }
+
+    .footer-logo{
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .more-tnw{
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    .about-tnw{
+        grid-column: 3;
+        grid-row: 1;
+    }
+
+    footer hr{ 
+        width: 100%;
+        margin-top: 15px;
+        padding: 0;
+    }
+
+
+}

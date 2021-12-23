@@ -1,0 +1,245 @@
+/* MEDIA QUERY */
+
+@media (min-width:768px) {
+    .md-6 {width: 50%;}
+    .md-7{width: 60%;}
+    .md-5{width: 45%;}
+    .md-12{width: 98.9%;}
+
+    .limited{
+        max-width: 1240px;
+        margin: auto;
+    }
+
+
+   
+    .exhibition a svg{
+        height: 50px;
+    }
+
+    .cards{
+        margin: 2rem 0 13rem 0;
+    }
+    .card-row{
+        display: none;
+    }
+    .card-row-md{
+        padding: 0 0.75rem;
+        display: grid;
+        grid-template-columns: [first-col] 1fr;
+        grid-template-rows: [first-row last-row] 300px 200px;
+        gap: 7px;
+    }
+
+    .dv-1-md{
+        grid-column: first-col / span auto;
+        grid-row: first-row;
+    }
+
+    .sub-medium-grid{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 200px);
+        gap: 7px;
+    }
+
+    .dv-2-md{
+        background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.8)), url(https://img-cdn.tnwcdn.com/image?fit=285%2C150&url=https%3A%2F%2Fs3.amazonaws.com%2Fevents.tnw%2Fhardfork-2018%2Fuploads%2Fcompanies%2Fhome-header_advert-tnw2021-03.jpg&signature=5666d931fff7b6ec7496f08886c9fde0);
+        grid-column: 2 / 2;
+        grid-row: 1;
+        padding: 3rem 2rem;
+        text-align: center;
+
+    }
+
+    .dv-3-md{
+       
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .dv-4-md{
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .dv-5-md{
+        background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.8)), url(https://img-cdn.tnwcdn.com/image?fit=600%2C300&url=https%3A%2F%2Fs3.amazonaws.com%2Fevents.tnw%2Fhardfork-2018%2Fuploads%2Fvisuals%2Fgifts.jpeg&signature=53019132c629a44baae62f6d4c154f7c);
+        grid-column: 2 / 2;
+        grid-row: 2;
+        padding: 6rem .8rem 0 .8rem;
+    }
+
+    .sm-grid-1{
+        flex: 1;
+    }
+
+    .latest-stories{
+        height: 1285px;
+    }
+
+     .stories-section{
+        text-align: left;
+        margin-left: 3rem;
+      
+    }
+
+    .latest-stories-row{
+        padding: 0 3rem;
+        display: grid;
+        grid-template-columns: repeat(2, [two-cols] 1fr);
+        grid-column-gap: 35px;
+        grid-row-gap: 120px;
+        grid-template-rows: repeat(4, [four-rows] 200px);
+    }
+
+  .grid-col-1{
+      grid-column: two-cols;
+      grid-row: four-rows 1;
+   }
+
+   figcaption{
+       display: block;
+       line-height: 1.5;
+       color: #000;
+       margin-top: 1rem;
+   }
+
+   .sm-flex{
+       display: block;
+       padding: 0;
+   }
+
+    .latest-stories figure{
+        display: block;
+        width: 100%;
+        height: 200px;
+        border-radius: 0;
+        padding-top: 0;
+        margin-right: 0;
+        
+    }
+
+   
+    .social h3{
+        font-size: 3em;
+        font-weight: 700;
+    }
+
+    .level{
+        padding: 0 3rem;
+    }
+
+    .video-thumbnail{
+        padding: 0 3rem;
+        display: grid;
+        grid-template-columns: 30rem 18rem;
+        grid-template-rows: [one-row] 600px;
+        gap: 10px;
+    }
+
+    .frame-1{
+        background-color: #000;
+        grid-column: 1;
+        grid-row: one-row
+    }
+
+    .frame-2{
+        /*background-color: #ff0000;*/
+        grid-column: 2 ;
+        grid-row: one-row;
+    }
+
+     .frame-2{
+        display: grid;
+        grid-template-columns: [col-start] 1fr;
+        overflow-x: hidden;
+    }
+
+    .frame-2 article{
+        grid-column: col-start / auto;
+    }
+
+    iframe{
+        height: 500px;
+    }
+
+     .wrk-with-us{
+        display: grid;
+        grid-template-columns: [col-start col-end] 50% 1fr ;
+        grid-template-rows: [row-start row-end] 300px;
+        gap: 15px;
+    }
+
+    .col-one{
+        grid-column: col-start / span 1;
+        grid-row: row-start;
+        margin: 3rem;
+        text-align: left;
+    }
+
+    .sub-grid-container{
+        grid-column: 2 / span 1 ;
+        grid-row: 1;
+    }
+
+    .info{
+        width: 40%;
+    }
+
+
+    .partners-wrapper{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows:  repeat(3, 80px);
+        /*text-align: center;
+        gap: 2px;
+        /*grid-column-gap: 25px;*/
+    }
+
+    .google{
+        grid-column: 1;
+        grid-row: 1;
+    }
+    .etoro{
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    .ibm{
+       grid-column: 3 ;
+       grid-row: 1;
+    }
+
+    .microsoft{
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .paypal{
+        grid-column: 2;
+        grid-row: 2;
+    }
+    .vodafone{
+        grid-column: 3;
+        grid-row: 2;
+    }
+
+    .accenture{
+        grid-column: 1;
+        grid-row: 3;
+    }
+
+    .mckinsey{
+        grid-column: 3;
+        grid-row: 3;
+       
+    }
+
+    .partners-wrapper img{
+        width: 70%;
+    }
+}
+
+
+

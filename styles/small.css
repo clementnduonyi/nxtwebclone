@@ -1,0 +1,984 @@
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+*{ -moz-box-sizing: border-box; -webkit-box-sizing: border-box; margin: 0; padding: 0; box-sizing: border-box; }
+
+body{
+    padding: 0;
+    margin: 0;
+    background-color: #fff;
+    font: 400 16px/1 'Francois One', sans-s;
+   
+}
+/* GRID */
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.limited{max-width: 1240px; margin: auto;}
+.second-limit{max-width: 1120px; margin: auto;}
+.column {
+    padding: 0 2vw; 
+    /*margin: 0 0 .75rem 0;*/
+}
+.sm-12{flex-basis: 100%;}
+
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: auto;
+    background-color: #f5f5f5fd;
+    box-shadow: 0 0 5px #4d4d4d;
+}
+
+
+header svg {
+    height: 16px;
+}
+/* NAVIGATION */
+
+
+nav svg:hover{
+    fill: #800080;
+}
+
+.fa-chevron-down{
+    font-size: 15px;
+    padding: 0 5px;
+    font-weight: 100;
+}
+
+.nav-items{
+    justify-content: space-between;
+}
+
+.nav-links{
+    margin: 0 auto;
+}
+nav ul{margin: 0; padding: 0;}
+nav li {
+    list-style-type: none;
+    /*margin-right: .3rem;*/
+    padding: 1.5rem .8rem;
+}
+
+nav .fa-envelope,
+nav .fa-th{
+    padding: 1rem .5rem;
+    font-size: 20px;
+}
+
+nav svg{
+    margin: 1.3rem 0;
+}
+
+nav .notification i:hover{
+    color: #000;
+
+}
+
+nav li.active{
+    background-color: #fff;
+}
+
+nav li:hover{
+    background-color: #fff;
+    
+}
+
+nav a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-variant: small-caps;
+    font-size: 13px;
+    color: #4d4d4d;
+    
+}
+
+nav a:hover{ font-weight: 700;}
+nav ul{display: none;}
+
+.yellow-banner{
+    background-color: #fada22e5;
+    padding: .8rem 0 1rem 5.6rem;
+    color: #000;
+    display: none;
+}
+
+ a{
+    text-decoration: none;
+}
+
+.exhibition-container{
+   margin-top: 7rem;
+}
+
+.exhibition{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.exhibition a svg{
+    height: 30px;
+}
+
+.exhibition p{
+   margin: 10px;
+   color: #4d4d4d;
+}
+
+
+
+.cards{
+    margin-top: 2rem;
+    /*background-color: yellow;*/
+    height: 515px;
+}
+
+.card-row{
+    padding: 0 0.75rem;
+    display: grid;
+    grid-template-columns: [col-start col-end] 1fr;
+    grid-template-rows: repeat(2, [row-start row-end ] 250px 200px);
+    gap: 7px;
+    /*grid-row-gap: 2px;*/
+    overflow: hidden;
+    
+}
+
+.cards a{
+    color: #fff;
+  
+}
+
+.cards h6{
+    margin-bottom: .5rem;
+}
+
+
+.scroll-container{
+    padding: 0 0.75rem;
+    grid-column: col-start / span 4;
+    gap: 7px;
+    grid-row: row-start;
+    overflow-y: hidden;
+
+}
+.container{text-align: center;}
+.container h3{
+   margin-bottom: 2rem;
+}
+
+.scroll-container{
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(4, [four-cols] 86%);
+    grid-template-rows: [row-start] 250px;
+    overflow-x: scroll;
+}
+
+.dv-1,
+.dv-2,
+.dv-3,
+.dv-4 {
+    grid-column: four-cols / span 1.5;
+    grid-row: row-start;
+}
+
+/*.dv-5{
+    grid-column: span/auto;
+    grid-row: 2;
+}*/
+
+.cta{
+    border: 1px #fff solid;
+    border-radius: 20px;
+    text-transform: uppercase;
+    padding: 15px;
+}
+.dv-1,
+.dv-1-md,
+.dv-1-lg{
+    background-color: #4d4d4d;
+    background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,5)), url(https://img-cdn.tnwcdn.com/image?fit=600%2C300&url=https%3A%2F%2Fs3.amazonaws.com%2Fevents.tnw%2Fhardfork-2018%2Fuploads%2Fvisuals%2Ftime-travel.jpeg&signature=7da2d9340a3ec32ff1a82bab5ad574d1);
+    background-size: cover;
+    background-position: 50%;
+    padding: 14rem .8rem 0 .8rem;
+
+}
+
+.dv-2,
+.dv-2-md,
+.dv-2-lg{
+    background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.8)), url(https://img-cdn.tnwcdn.com/image?fit=600%2C300&url=https%3A%2F%2Fs3.amazonaws.com%2Fevents.tnw%2Fhardfork-2018%2Fuploads%2Fvisuals%2Fgifts.jpeg&signature=53019132c629a44baae62f6d4c154f7c);
+    background-size: cover;
+    background-position: 50%;
+    padding: 7rem .8rem 0 .8rem;
+    color: #fff;
+}
+
+
+.dv-3,
+.dv-3-md,
+.dv-3-lg{
+    background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.8)), url(https://img-cdn.tnwcdn.com/image?fit=600%2C300&url=https%3A%2F%2Fs3.amazonaws.com%2Fevents.tnw%2Fhardfork-2018%2Fuploads%2Fvisuals%2FspaceX.jpeg&signature=18f706972ebf418afac2369dcd6b5ebc);
+    background-size: cover;
+    background-position: 50%;
+    padding: 7rem .8rem 0 .8rem;
+   
+}
+
+.dv-4,
+.dv-4-md,
+.dv-4-lg{
+    background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.8)), url(https://img-cdn.tnwcdn.com/image?fit=600%2C300&url=https%3A%2F%2Fs3.amazonaws.com%2Fevents.tnw%2Fhardfork-2018%2Fuploads%2Fvisuals%2Fluft.jpeg&signature=7eedf3e603a2d97b78bb5165c597fe0a);
+    background-size: cover;
+    background-position: 50%;
+    padding: 7rem .8rem 0 .8rem;
+    color: #fff;
+}
+
+
+.dv-5,
+.dv-5-md,
+.dv-5-lg{
+    background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.8)), url(https://img-cdn.tnwcdn.com/image?fit=285%2C150&url=https%3A%2F%2Fs3.amazonaws.com%2Fevents.tnw%2Fhardfork-2018%2Fuploads%2Fcompanies%2Fhome-header_advert-tnw2021-03.jpg&signature=5666d931fff7b6ec7496f08886c9fde0);
+    background-size: cover;
+    background-position: 50%;
+    padding: 14rem .8rem 0 .8rem;
+    color: #fff;
+   
+}
+.dv-1,
+.dv-2,
+.dv-3,
+.dv-4{
+    padding: 11rem .8rem .5rem .8rem;
+    font-size: 14px;
+}
+.dv-1{padding-top: 9.5rem }
+
+.dv-5{
+    text-align: center;
+    padding: 4rem 1.5rem 0 1.5rem;
+    font-size: 14px;
+}
+
+
+
+
+
+.card-row-md{display: none;}
+.card-row-lg{display: none;}
+ 
+.popular-posts{margin: .7rem 0 0 0; background-color: #dbd8d888;}
+.popular-posts h2{
+    text-align: center;
+    padding: 4rem 2rem;
+    color: #615f5f86;
+    text-transform: uppercase;
+    letter-spacing: -1.5px;
+    font-size: 18px;
+}
+
+.second-limit .column{
+    padding: 0 1rem 3rem 0;
+}
+
+.popular-post-row{
+  display: flex;
+  flex-direction: column;
+}
+
+.sm-grid{
+  padding: 1rem 2rem;
+  display: flex;
+}
+
+.sm-grid a{
+    color: #000;
+}
+
+
+.sm-grid-1{
+    flex: 2;
+    font-size: 2rem;
+    color: #800080;
+}
+.sm-grid-2{
+   flex: 10;
+   line-height: 22px;
+}
+
+ .stories-section{
+    text-align: center;
+    padding: 3rem 0 5rem 0;
+    color: #000;
+    letter-spacing: -1.5px;
+    font-size: 36px;
+}
+
+.latest-stories-row{
+    display: flex;
+    flex-direction: column;
+}
+
+figure{
+    flex: 2;
+    padding-top: 2rem;
+    margin-right: 1rem;
+    font-size: 2rem;
+    text-align: center;
+    border-radius: 50%;
+    width: 110px;
+    height: 110px;
+    background-color: #e00ee0;
+}
+
+.thumbnail figure{
+    border-radius: 0;
+    width: 100%;
+    height: auto;
+}
+
+.sm-flex{
+    display: flex;
+    padding: 1rem;
+    color: #000;
+    line-height: 1.5;
+}
+
+.latest-stories figcaption{
+   flex: 12;
+    
+}
+
+figcaption small{
+    color: #4d4d4d;
+}
+
+.latest-stories{
+    height: 1180px;
+    padding: 1rem 0;
+}
+
+.grid-col-1{
+    background: url(https://img-cdn.tnwcdn.com/image?fit=285%2C150&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F12%2Frsz_1main-all-three-vehicles-scaled-1.jpeg&signature=5894fd4d75cea14e85739eeb67e75ade);
+    background-size: cover;
+    background-position: 50%;
+}
+
+.grid-col-2{
+    background: url(https://img-cdn.tnwcdn.com/image?fit=285%2C150&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F12%2FTheMarkup.jpg&signature=3ba517c93422e60adc05b17d4c71dbcc);
+    background-size: cover;
+    background-position: 50%;
+}
+.grid-col-3{
+    background-image: url(https://img-cdn.tnwcdn.com/image?fit=285%2C150&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F12%2FNvidia-ARM-1.jpg&signature=8935b994af492d3741c3bf9a2ae9c775);
+    background-size: cover;
+    background-position: 50%;
+}
+.grid-col-4{
+    background-image: url(https://img-cdn.tnwcdn.com/image?fit=285%2C150&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F11%2FUntitled-design2.png&signature=68f6ca20d9553866d1ee75d36c1e438c);
+    background-size: cover;
+    background-position: 50%;
+}
+.grid-col-5{
+    background-image: url(https://img-cdn.tnwcdn.com/image?fit=285%2C150&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F12%2FIntel-AMD-Snapdragon.jpg&signature=42d3ffe41d4869fd973b59f539252d14);
+    background-size: cover;
+    background-position: 50%;
+}
+.grid-col-6{
+    background-image: url(https://img-cdn.tnwcdn.com/image?fit=285%2C150&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F12%2FWindows-11-Start-Menu-Pixelated.jpg&signature=35b7abb42c49ececb5b2e8639d2d590f);
+    background-size: cover;
+    background-position: 50%;
+}
+.grid-col-7{
+    background-image: url(https://img-cdn.tnwcdn.com/image?fit=285%2C150&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F12%2FUntitled-design-3-1.jpg&signature=1f338c1e15971bc1d486a8971f4959e3);
+    background-size: cover;
+    background-position: 50%;
+}
+.grid-col-8{
+    background-image: url(https://img-cdn.tnwcdn.com/image?fit=285%2C150&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F12%2Felon_trash.jpg&signature=f9389617b9347387a6b48e3355fdd0c0);
+    background-size: cover;
+    background-position: 50%;
+   
+}
+
+.explore-more-stories{
+   margin-top: 2rem;
+   padding: 2rem 0;
+   text-align: center;
+   /*background-color: red;*/
+   height: 70px;
+}
+
+.explore-more-stories a{
+    border-radius: 20px;
+    text-transform: uppercase;
+    padding: 15px 20px;
+    box-shadow: 2px #4d4d4d solid;
+    background-color: #b83d7a;
+    color: #fff;
+}
+
+.explore-more-stories i{
+    color: #4d4d4d;
+}
+
+
+.channels{
+    /*padding: 0 3rem;*/
+    background-color: #f3f3f3;
+    height: 1700px;
+    margin: 8rem 0 5rem 0;
+}
+
+.channels h1{
+    text-align: center;
+    margin: 0 0 3rem 0;
+    padding: 1rem 0 0 0;
+}
+
+
+.channels h4{
+    margin-top: 5rem;
+    line-height: 1.5;
+    color: #fff;
+}
+
+.social img{
+    width: 50%;
+    height: auto;
+}
+
+.social{
+    margin-top: 5rem;
+    padding: 6rem 1rem;
+    text-align: center;
+    background-color: #000;
+    background-image: url("https://next.tnwcdn.com/assets/next/img/spacesbg.png");
+}
+
+.social h3, h4 {
+    color: #fff;
+    
+}
+
+.social h3{
+    letter-spacing: -1px;
+    font-size: 1.6em;
+    font-weight: 500;
+    
+}
+
+.social h4{
+   margin: 1.5rem 0;
+}
+
+form{
+    display: flex;
+    justify-content: center;
+}
+
+.social button{
+    border: none;
+    background-color: #b83d7a;
+    color: #fff;
+    padding: .8rem;
+    width: 10rem;
+    border-radius: 0 5px 5px 0;
+    font-size: 1.3em;
+    text-transform: uppercase;
+}
+
+input[type="email"]{
+    border: none;
+    width: 41rem;
+    color: #d1cececa;
+    
+}
+
+form .fa-envelope {
+   padding: 1rem 0;
+   background-color: #fff;
+   color: #d1cececa;
+   width: 2rem;
+   border-radius: 5px 0 0 5px;
+}
+
+.social ul{
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   list-style-type: none;
+}
+
+.social li{
+    padding: 1rem;
+    color: #d1cececa;
+    font-size: 1.6em;
+}
+
+.social li a{
+    color: #d1cececa;
+
+}
+
+.social .highlight{
+    color: #008080;
+}
+
+.channel-cards{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 1 200px;
+    gap: 9px;
+    overflow-x: auto;
+   padding: 0 1rem;
+}
+
+
+
+.channel-logo img{
+    height: auto;
+    width: 30%;
+    padding: 2rem 0;
+}
+
+.channel{
+    grid-row: 1;
+    background-position: center;
+    background-size: cover;
+    height: 250px;
+    width: 250px;
+    /*margin: 0 .5rem;*/
+    text-align: center;
+}
+ 
+
+ .thumbnail h2{
+     margin: 5rem 0 3rem 0;
+     font-size: 2.5em;
+ }
+
+.video-thumbnail{
+   display: flex;
+   flex-direction: column;
+}
+
+.frame-1{
+    background-color: #000;
+    height: auto;
+    /*margin-bottom: 2rem;*/
+    
+}
+
+iframe{
+    height: 500px;
+}
+
+.frame-1 p{
+    color: #fff;
+    margin-top: .5rem;
+    padding: 0 3rem;
+    line-height: 25px;
+}
+
+.frame-1 small{
+    color: #4d4d4d;
+}
+
+.frame-2{
+    display: inline-grid;
+    grid-template-columns: repeat(24 1fr);
+    overflow-x: scroll;
+    gap: 20px;
+    padding: 0 1.4rem;
+    
+}
+
+article img{
+    height: 140px;
+    position: cover;
+    width: 100%;
+}
+
+.frame-2 a{
+    color: #000;
+}
+
+.frame-2 article{
+   height: auto;
+   width: 18rem;
+}
+
+.vid-2{
+    grid-column: 1 / span 4;
+    grid-row: 1;
+}
+.vid-3{
+    grid-column: 2 / span 4;
+    grid-row: 1;
+}
+
+.vid-4{
+    grid-column: 3 / span 4;
+    grid-row: 1;
+}
+
+.vid-5{
+    grid-column: 4 / span 4;
+    grid-row: 1;
+}
+
+.vid-6{
+    grid-column: 5 / span 4;
+    grid-row: 1;
+}
+
+.vid-7{
+    grid-column: 6 / span 4;
+    grid-row: 1;
+}
+
+.vid-8{
+    grid-column: 7 / span 4;
+    grid-row: 1;
+}
+
+.vid-9{
+    grid-column: 8 / span 4;
+    grid-row: 1;
+}
+
+.vid-10{
+    grid-column: 9 / span 4;
+    grid-row: 1;
+}
+
+.vid-11{
+    grid-column: 10 / span 4;
+    grid-row: 1;
+}
+
+.vid-12{
+    grid-column: 11 / span 4;
+    grid-row: 1;
+}
+
+.vid-13{
+    grid-column: 12 / span 4;
+    grid-row: 1;
+}
+
+.vid-14{
+    grid-column: 13 / span 4;
+    grid-row: 1;
+}
+
+.vid-15{
+    grid-column: 14 / span 4;
+    grid-row: 1;
+}
+
+.vid-16{
+    grid-column: 15 / span 4;
+    grid-row: 1;
+}
+
+.vid-17{
+    grid-column: 16 / span 4;
+    grid-row: 1;
+}
+
+.vid-18{
+    grid-column: 17 / span 4;
+    grid-row: 1;
+}
+
+.vid-19{
+    grid-column: 18 / span 4;
+    grid-row: 1;
+}
+
+.vid-20{
+    grid-column: 19 / span 4;
+    grid-row: 1;
+}
+
+.vid-21{
+    grid-column: 20 / span 4;
+    grid-row: 1;
+}
+
+.vid-22{
+    grid-column: 21 / span 4;
+    grid-row: 1;
+}
+
+.vid-23{
+    grid-column: 22 / span 4;
+    grid-row: 1;
+}
+
+.vid-24{
+    grid-column: 23 / span 4;
+    grid-row: 1;
+}
+
+
+
+.wrk-with-us{
+    display: grid;
+    grid-template-columns: [col-start] 1fr;
+    grid-template-rows: repeat(2, [row-start row-end] 300px);
+    grid-row-gap: 50px;
+}
+
+.col-one{
+    grid-column: col-start / span 2;
+    grid-row: row-start;
+    margin: 3rem 1rem;
+    text-align: center;
+}
+
+.sub-grid-container{
+    grid-column: col-start / auto ;
+    grid-row: 2;
+    margin: 0 0 0 5rem;
+}
+
+.sub-grid-container{
+    display: grid;
+    grid-template-columns: repeat(2, [col-start col-finish] 1fr);
+    grid-template-rows: repeat(2, [row-start row-finish] 200px);
+}
+
+.work{margin-top: 5rem;}
+.wrk-with-us h2, p{
+    margin: .5rem 0 2rem 0;
+}
+
+.wrk-with-us h2{
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.wrk-with-us h6{
+   color: #800080;
+   font-weight: 700;
+}
+
+.wrk-with-us span{
+    color: #000;
+}
+
+.wrk-with-us button{
+    color: #fff;
+    font-size: 18px;
+    border-radius: 3px;
+    border: none;
+    background-color: rgba(9, 220, 240, 0.972);
+    padding: 15px;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+
+
+
+.info{
+    text-align: center;
+    width: 100%;
+}
+
+.media{
+    grid-column: col-start;
+    grid-row: 1;
+}
+
+.events{
+    grid-column: col-finish / span auto;
+    grid-row: 1;
+}
+
+.spaces{
+    grid-column: col-start / span auto;
+    grid-row: 2;
+}
+
+.programs{
+    grid-column: col-finish /span auto;
+    grid-row: 2;
+}
+
+.partners{
+    margin: 5rem 0;
+}
+
+
+.partners-wrapper{
+    display: grid;
+    grid-template-columns: repeat(2, [first-col second-col] 1fr);
+    grid-template-rows: repeat(4, [first-row second-row third-row fourth-rows] 100px);
+    text-align: center;
+    /*grid-column-gap: 25px;*/
+}
+
+.google{
+    grid-column: first-col;
+    grid-row: first-row ;
+}
+.etoro{
+    grid-column: second-col / span auto;
+    grid-row: first-row;
+}
+
+.ibm{
+    grid-column: first-col;
+    grid-row: 2;
+}
+
+.microsoft{
+    grid-column: second-col / span auto;
+    grid-row: 2;
+}
+
+.paypal{
+    grid-column: first-col;
+    grid-row: 3;
+}
+.vodafone{
+    grid-column: second-col / span auto;
+    grid-row: 3;
+}
+
+.accenture{
+    grid-column: first-col;
+    grid-row: 4;
+}
+
+.mckinsey{
+    grid-column: second-col / span auto;
+    grid-row: 4;
+}
+
+
+
+
+.partners img{
+    width: 70%;
+}
+
+footer{
+    height: 600px;
+    margin: 5rem 0 0 0;
+    background-color: #000;
+}
+
+.footer-grid{
+    padding: 4rem 1rem 0 1rem;
+    display: grid;
+    grid-template-columns: repeat(2, 15rem 18rem);
+    grid-template-rows: repeat(2 20px);
+    
+}
+
+.footer-logo svg{
+    fill: #fff;
+    height: 40px;
+}
+
+.footer-logo{
+    grid-column: 1;
+    grid-row: 1;
+    margin-bottom: 2rem;
+}
+
+
+
+.footer-items li a{
+    font-size: 16px;
+    color: rgba(9, 220, 240, 0.972);
+}
+footer h3{
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+
+.more-tnw{
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.about-tnw{
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.footer-logo p{
+    margin-top: 1rem;
+    color: #fff;
+    font-size: 23px;
+}
+
+/*footer.fa-envelope {
+   padding: 1rem 0;
+   background-color: #fff;
+   color: #d1cececa;
+   width: 2rem;
+   border-radius: 5px 0 0 5px;
+}*/
+
+footer ul{
+   display: flex;
+   flex-direction: row;
+   /*justify-content: center;*/
+   list-style-type: none;
+}
+
+footer li{
+    padding: 0 1rem 0 0 ;
+    color: #d1cececa;
+    font-size: 1.6em;
+}
+
+footer li a{
+    color: #d1cececa;
+
+}
+
+.footer-items ul{
+    display: flex;
+    flex-direction: column;
+}
+
+/*footer hr{ 
+    margin-top: 8px;
+    padding: 0;
+}*/
+
+footer .copy-right{
+    text-align: center;
+    color: #4d4d4d;
+    margin-top: 3rem;
+}
+
+footer .copy-right a{
+    color: #fff;
+}
+
+
+
+.clearfix:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
